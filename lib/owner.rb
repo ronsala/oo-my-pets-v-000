@@ -70,6 +70,8 @@ class Owner
     @pets[:cats].each {|cat| cat.mood=("nervous")}
     @pets[:fishes].each {|fish| fish.mood=("nervous")}
     # self.pets.each {|type, pets| pets = []}
-    @pets[:dogs].each {|dog| dog.mood=("nervous")}
+    @pets[:dogs] = []
+    @pets[:cats] = []
+    @pets[:fishes] = []
   end
 end
