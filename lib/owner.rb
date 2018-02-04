@@ -69,9 +69,12 @@ class Owner
     @pets[:dogs].each {|dog| dog.mood=("nervous")}
     @pets[:cats].each {|cat| cat.mood=("nervous")}
     @pets[:fishes].each {|fish| fish.mood=("nervous")}
-    # self.pets.each {|type, pets| pets = []}
     @pets[:dogs] = []
     @pets[:cats] = []
     @pets[:fishes] = []
+  end
+
+  def list_pets
+    "I have #{@pets[:fishes].size} fish, 3 dog(s), and 1 cat(s)."
   end
 end
